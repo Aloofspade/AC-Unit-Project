@@ -1,8 +1,9 @@
 
 import './App.css';
-import  Logo  from './utils/logo.png';
+import React from "react"; 
+import  Logo  from './styles/utils/logo.png';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Navbar from "./components/Navbar"
+import Navbar from "./pages/Navbar"
 import Dogs from "./pages/Home"
 import Cats from "./pages/About"
 import Sheeps from "./pages/Contact"
@@ -12,7 +13,7 @@ function App() {
     <div className="App">
       
       <img src={Logo} alt="Logo" />
-      <Router>
+      <Router> 
       <Navbar />
       <Switch>
         <Route path='/' exact component={Dogs} />

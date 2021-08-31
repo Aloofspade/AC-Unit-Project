@@ -1,3 +1,9 @@
+
+@use '../themes/defaultTheme' as *;
+@use '../utils/mixins' as *;
+@use '../utils/variables' as *;
+
+
 .mid {
 	background-color: #4D748C;
 	display: inline-block;
