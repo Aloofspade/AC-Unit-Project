@@ -1,18 +1,19 @@
 
 import './App.css';
 import React from "react"; 
-import  Logo  from './styles/utils/logo.png';
+
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Navbar from "./pages/Navbar"
 import Dogs from "./pages/Home"
 import Cats from "./pages/About"
 import Sheeps from "./pages/Contact"
 import Goats from "./pages/Shop"
+
 function App() {
   return (
     <div className="App">
       
-      <img src={Logo} alt="Logo" />
+      
       <Router> 
       <Navbar />
       <Switch>
