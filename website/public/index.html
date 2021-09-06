@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/logo.png" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     
@@ -25,7 +27,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Rv Connect</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -41,6 +43,105 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+
+  <script type="text/javascript">
+		let thumbnails = document.getElementsByClassName('thumbnail')
+
+		let activeImages = document.getElementsByClassName('active')
+
+		for (var i=0; i < thumbnails.length; i++){
+
+			thumbnails[i].addEventListener('mouseover', function(){
+				console.log(activeImages)
+				
+				if (activeImages.length > 0){
+					activeImages[0].classList.remove('active')
+				}
+				
+
+				this.classList.add('active')
+				document.getElementById('featured').src = this.src
+			})
+		}
+
+
+		let buttonRight = document.getElementById('slideRight');
+		let buttonLeft = document.getElementById('slideLeft');
+
+		buttonLeft.addEventListener('click', function(){
+			document.getElementById('slider').scrollLeft -= 180
+		})
+
+		buttonRight.addEventListener('click', function(){
+			document.getElementById('slider').scrollLeft += 180
+		})
+
+    $(document).ready(
+    function() {
+  
+      $('#signup').on("click", function() {
+        var x = this.id;
+        $("#" + x).removeClass("s-atbottom");
+        $("#" + x).addClass("s-attop");
+        $("#login").removeClass("l-attop");
+        $("#login").addClass("l-atbottom");
+  
+      });
+  
+      $('#login').on("click", function() {
+        var x = this.id;
+        $("#" + x).removeClass("l-atbottom");
+        $("#" + x).addClass("l-attop");
+        $("#signup").removeClass("s-attop");
+        $("#signup").addClass("s-atbottom");
+  
+      });
+  
+    }
+  
+  );
+  $(document).ready(function(){
+  buildMap();
+});
+
+var sw = document.body.clientWidth,
+    bp = 550,
+    $map = $('.map');
+
+var embed = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3879.7818923800583!2d-112.58450941072869!3d33.395949273420705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b35049806aed5%3A0xe3f3728df19b3826!2s24710%20W%20Dove%20Trail%2C%20Buckeye%2C%20AZ%2085326!5e0!3m2!1sen!2sus!4v1630896169226!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>';
+
+function buildMap() {
+  if(sw>bp) { //If Large Screen
+      if($('.map-container').length < 1) { //If map doesn't already exist
+        buildEmbed();
+      }
+  } else {
+      if($('.static-img').length < 1) { //If static image doesn't exist
+        buildStatic();
+      }
+  }
+};
+
+function buildEmbed() { //Build iframe view
+    $('<div class="map-container"/>').html(embed).prependTo($map);
+};
+  
+function buildStatic() { //Build static map
+   var mapLink = $('.map-link').attr('href'),
+       $img = $('<img class="static-img" />').attr('src',static);
+   $('<a/>').attr('href',mapLink).html($img).prependTo($map); 
+}
+
+$(window).resize(function() {
+  sw = document.body.clientWidth;
+  buildMap();
+  google.maps.event.trigger(map, "resize");
+});
+   
+
+
+
+	</script>
 
   
 </html>

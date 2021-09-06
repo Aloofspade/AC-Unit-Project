@@ -1,0 +1,36 @@
+
+
+
+
+/* From https://codepen.io/chriscoyier/full/kycDp */
+.map-container {
+  width: 100%;
+  margin: 0 auto;
+  height: 0;
+  padding-top: 38%;
+  position: relative;
+  
+  display: none; /* Hide for small screens */
+  iframe {
+    width: 100%;
+    height: 100%; /* had to specify height/width */
+    position: absolute;
+    top: 240px; 
+    right: 0;
+    left: 0; 
+    bottom: 200px;   
+  }
+}
+
+/* Medium Screens */
+@media all and (min-width: 34.375em) {
+  .map-container {
+    display: block;
+  } 
+  .static-img {
+    display: none; 
+  }
+}
+
+
+

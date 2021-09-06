@@ -14,6 +14,10 @@ I just did my mock up and folders
 
 I have finished the navbar and the pages to start editing the scss.
 
+## Day 3
+### 08/31/21
+
+I have Finish the Home page. The SCSS and JSX. I finish the product slide, location map, and login.
 
 
 ### Website

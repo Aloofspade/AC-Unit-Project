@@ -8,22 +8,41 @@ import Dogs from "./pages/Home"
 import Cats from "./pages/About"
 import Sheeps from "./pages/Contact"
 import Goats from "./pages/Shop"
-
+import Login from "./components/login";
+import Map from "./components/map";
+import Footer from "./components/footer";
 function App() {
   return (
     <div className="App">
       
       
-      <Router> 
-      <Navbar />
-      <Switch>
-        <Route path='/' exact component={Dogs} />
+        <Router> 
+        <Navbar />
+        <Switch>
+          <Route path='/' exact component={Dogs} />
         <Route path='/cats' component={Cats} />
         <Route path='/sheeps' component={Sheeps} />
         <Route path='/goats' component={Goats} />
-      </Switch>
-    </Router>
+         </Switch>
+       </Router>
+       <div className="login">
+       <div className="title">Rv Connect</div>
+        <Login />
+
+        </div>
+
+    
+    <Map />
+    
+
+    
+    <Footer />
+   
+
+
     </div>
+
+    
   );
 }
 
