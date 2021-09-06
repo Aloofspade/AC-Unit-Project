@@ -4,12 +4,10 @@ import React from "react";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Navbar from "./pages/Navbar"
-import Dogs from "./pages/Home"
-import Cats from "./pages/About"
-import Sheeps from "./pages/Contact"
-import Goats from "./pages/Shop"
-import Login from "./components/login";
-import Map from "./components/map";
+import Home from "./pages/Home"
+import About from "./pages/About"
+import Contact from "./pages/Contact"
+import Shop from "./pages/Shop"
 import Footer from "./components/footer";
 function App() {
   return (
@@ -18,22 +16,20 @@ function App() {
       
         <Router> 
         <Navbar />
+      
         <Switch>
-          <Route path='/' exact component={Dogs} />
-        <Route path='/cats' component={Cats} />
-        <Route path='/sheeps' component={Sheeps} />
-        <Route path='/goats' component={Goats} />
+          
+          <Route path='/' exact component={Home} />
+        <Route path='/about' component={About} />
+        <Route path='/contact' component={Contact} />
+        
+        <Route path='/shop' component={Shop} />
+        
          </Switch>
+
+         
        </Router>
-       <div className="login">
-       <div className="title">Rv Connect</div>
-        <Login />
-
-        </div>
-
-    
-    <Map />
-    
+       
 
     
     <Footer />

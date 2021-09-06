@@ -48,10 +48,10 @@ function footer() {
 
           <div class="col-md-4 col-sm-6 col-xs-12">
             <ul class="social-icons">
-              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+              <li><a class="facebook" href="https://www.facebook.com/login.php"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="https://twitter.com"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="instagram" href="https://www.instagram.com"><i class="fa fa-instagram"></i></a></li>
+              <li><a class="linkedin" href="https://www.linkedin.com/uas/login"><i class="fa fa-linkedin"></i></a></li>   
             </ul>
           </div>
         </div>
