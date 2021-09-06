@@ -11,8 +11,6 @@ import image8 from '../components/images/preset7.jpg';
 
 import background from '../components/images/background.jpeg';
 
-
-
 const Home = () =>{
   return (
     

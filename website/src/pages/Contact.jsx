@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Cats = () =>{
+const Contact = () =>{
   return (
     <div>
       <h3>Cats</h3>
@@ -11,4 +11,4 @@ const Cats = () =>{
     </div>
   );
 }
-export default Cats;
+export default Contact;
