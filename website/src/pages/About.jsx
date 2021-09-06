@@ -2,7 +2,7 @@ import React from 'react';
 import ceo from '../components/images/ceo.jpg'
 import artdirector from '../components/images/artdirector.jpg';
 import designer from '../components/images/designer.jpg';
-
+import quote from '../components/images/quote.jpg'
 const About = () =>{
   return (
     <div>
@@ -53,9 +53,9 @@ const About = () =>{
   </div>
 </div>
 
-<main role="main">
+<main role="main" id="main">
   <section className="sec-intro" role="section">
-    <img src="https://www.techweekeurope.co.uk/wp-content/uploads/2012/07/wifimountaindownload.jpg" alt />
+    <img className="quote" src={quote} alt />
     <h1 className="infotitle">Be Innovative!</h1>
   </section>
   <section className="sec-boxes" role="section">
@@ -82,26 +82,26 @@ const About = () =>{
   </section>
   <section className="sec-events" role="section">
     <hr />
-    <h1 className="infotitle">Upcomming events</h1>
+    <h1 className="infotitle1">Upcomming events</h1>
     <article>
       <h1 className="infotitle">Tire Technology Expo</h1>
       <p className="pinfo">Tire Technology Expo has grown in strength and stature every year since it was started in Europe 15 years ago. Visitors and exhibitors to the conference and exhibition staged in February 2014 universally praised it as the 'world's leading tire design and tire manufacturing event', noting in particular the outstanding quality of the conference papers and speakers, and the comprehensive extent of machinery manufacturers and suppliers who exhibited at the event.</p>
-      <a className="link" href="#">more...</a>
+      <a className="link1" href="#">more...</a>
     </article>
     <article>
       <h1 className="infotitle">Meteorology World Expo</h1>
       <p className="pinfo">Meteorological Technology World Expo is a truly international exhibition of the very latest climate, weather and hydro - meteorological forecasting, measurement and analysis technologies and service providers for a global community of key decision makers within the aviation industry, shipping companies, marine / port installations, airports, military operations, off-shore exploration companies, wind farm operators, met offices, agriculture operations and research institutes.</p>
-      <a className="link" href="#">more...</a>
+      <a className="link1" href="#">more...</a>
     </article>
     <article>
       <h1 className="infotitle">Wearable Tech Expo</h1>
       <p className="pinfo">See live demos, listen to case studies, speak with Wearable Tech Experts The first Wearable Tech Expo in Tokyo 2014. Key players from Japan, America and Europe announced their new products and attracted attention from all over the world. The next Wearable Tech Expo in Tokyo will be doubling in size and include Robotics and IoT. The main players in the wearable industry, human factor engineers, brain scientists, media providers and creators will discuss the future of wearable technology! </p>
-      <a className="link" href="#">more...</a>
+      <a className="link1" href="#">more...</a>
     </article>
     <article>
       <h1 className="infotitle">Space Tech Expo</h1>
       <p className="pinfo">Space Tech Expo is the West Coast's premier B2B space event for spacecraft, satellite, launch vehicle and space-related technologies. Taking place in Long Beach, the Space Tech Expo exhibition and conference brings together global decision-makers involved in the design, build and testing of spacecraft, satellite, launch vehicle and space-related technologies. Leading the West Coast space and satellite industry, Space Tech Expo is where end-users connect with solution providers.</p>
-      <a className="link" href="#">more...</a>
+      <a className="link1" href="#">more...</a>
     </article>
   </section>
   <section className="sec-projects" role="section">
@@ -109,15 +109,15 @@ const About = () =>{
     <h1 className="infotitle">Previous Projects</h1>
     <article>
       <h1 className="infotitle">Neural network for Google</h1>
-      <p className="pinfo">People from Google approached us this January with offer to create new neural network for whole Google's ecosystem. This idea was very interesting and looked almost impossible at first glance. However, our engineers proved their expertise and built amazing autonomous platform. <a className="link" href="#">more...</a></p>
+      <p className="pinfo">People from Google approached us this January with offer to create new neural network for whole Google's ecosystem. This idea was very interesting and looked almost impossible at first glance. However, our engineers proved their expertise and built amazing autonomous platform. <a className="link1" href="#">more...</a></p>
     </article>
     <article>
       <h1 className="infotitle">Faster operating system for Apple</h1>
-      <p className="pinfo">For a years, since founding days of a company, Apple always worked with its own operating system. In October, this was about to change. Our company got chance to rewrite the history by creating brand new OS for Apple. It was very difficult and all our employees worked hard every day. <a className="link" href="#">more...</a></p>
+      <p className="pinfo">For a years, since founding days of a company, Apple always worked with its own operating system. In October, this was about to change. Our company got chance to rewrite the history by creating brand new OS for Apple. It was very difficult and all our employees worked hard every day. <a className="link1" href="#">more...</a></p>
     </article>
     <article>
       <h1 className="infotitle">Manufacturing technology for Intel</h1>
-      <p className="pinfo">Intel has been manufacturing company for many years. They always used the latest technologies to achieve the best results with lowest costs. However, this was not enough. Intel decided to offer us something that could disrupt whole technology sector. <a className="link" href="#">more...</a></p>
+      <p className="pinfo">Intel has been manufacturing company for many years. They always used the latest technologies to achieve the best results with lowest costs. However, this was not enough. Intel decided to offer us something that could disrupt whole technology sector. <a className="link1" href="#">more...</a></p>
     </article>
   </section>
   <section className="sec-standards" role="section">
