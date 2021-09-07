@@ -1,0 +1,163 @@
+/* Exclusive Product */
+.product-center {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	gap: 7rem 3rem;
+}
+.product {
+	height: 48rem;
+	background-color: #fff;
+	box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
+	border-radius: 1rem;
+	text-align: center;
+	transition: all 300ms ease-in-out;
+	&:hover {
+		box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.25);
+		.product-header {
+			&::after {
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				left: 0;
+				top: 0;
+				border-radius: 1rem 1rem 0 0;
+				background-color: rgba(0, 0, 0, 0.5);
+				transition: all 500ms ease-in-out;
+				z-index: 1;
+			}
+		}
+		.icons {
+			opacity: 1;
+			transform: translate(0, -50%) scale(1);
+		}
+	}
+}
+.product-header {
+	position: relative;
+	height: 35rem;
+	background-color: #f6f2f1;
+	transition: all 300ms ease-in-out;
+	z-index: 0;
+	img {
+		height: 100%;
+	}
+	.icons {
+		position: absolute;
+		right: 5%;
+		top: 50%;
+		transform: translate(0, -50%) scale(0);
+		z-index: 2;
+		opacity: 0;
+		transition: all 500ms ease-in-out;
+		span {
+			background-color: #fff;
+			font-size: 2.5rem;
+			display: block;
+			border-radius: 50%;
+			padding: 1.5rem 1.6rem;
+			line-height: 2rem;
+			cursor: pointer;
+			transition: all 300ms ease-in-out;
+			i {
+				transition: all 500ms ease-in-out;
+			}
+			&:not(:last-child) {
+				margin-bottom: 1rem;
+			}
+			&:hover {
+				background-color: #ff7c9c;
+				color: #fff;
+			}
+		}
+		a {
+			display: block;
+			margin-bottom: 1rem;
+		}
+	}
+}
+.product-footer {
+	padding: 2rem 1.6rem 1.6rem 1.6rem;
+	h3 {
+		font-size: 2.2rem;
+	}
+	.price {
+		color: #ff7c9c;
+		font-size: 2rem;
+	}
+}
+.rating {
+	color: #43b3d9;
+}
+.product-banner {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	height: 50rem;
+	background-color: #243a6f;
+	.left {
+		img {
+			object-fit: cover;
+			height: 100%;
+		}
+	}
+	.right {
+		align-self: center;
+		text-align: center;
+		padding: 1.6rem;
+	}
+	.content {
+		h2 {
+			color: #fbb419;
+			font-size: 3rem;
+			font-weight: 700;
+			margin-bottom: 1rem;
+		}
+		.discount {
+			color: #b888ff;
+		}
+		h1 {
+			span {
+				color: #fff;
+				font-size: 6rem;
+				font-weight: 700;
+				display: block;
+				line-height: 1;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 996px) {
+	.product-banner {
+		.content {
+			h1 {
+				span {
+					font-size: 5rem;
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 768px) {
+	.product-banner {
+		grid-template-columns: 1fr;
+		.left {
+			display: none;
+		}
+		.content {
+			h1 {
+				span {
+					font-size: 4rem;
+				}
+			}
+			h2 {
+				font-size: 2rem;
+			}
+			a {
+				padding: 1rem 3rem;
+			}
+		}
+	}
+}
+.title5{
+    color: white;
+}

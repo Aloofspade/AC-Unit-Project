@@ -13,7 +13,7 @@ const Navbar= () =>{
     <img src={Logo} alt="Logo" />
     </div>
     <nav>
-      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+    <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
       <ul class="nav-list">
         <li>
         <Link to="/">Home</Link>
@@ -24,9 +24,13 @@ const Navbar= () =>{
         <li>
         <Link to="/contact">Contact</Link>
         </li>
-      
+       
         <li>
         <Link to="/shop">Shop</Link>
+        </li>
+
+        <li id="sho">
+        <Link to="/sho" />
         </li>
       </ul>
     </nav>

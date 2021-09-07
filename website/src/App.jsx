@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Shop from "./pages/Shop";
+import Sho from "./pages/Sho";
 import Footer from "./components/footer";
 function App() {
   return (
@@ -19,12 +20,11 @@ function App() {
       
         <Switch>
           
-          <Route path='/' exact component={Home} />
+        <Route path='/' exact component={Home} />
         <Route path='/about' component={About} />
         <Route path='/contact' component={Contact} />
-        
+        <Route path='/sho' component={Sho} />
         <Route path='/shop' component={Shop} />
-        
          </Switch>
 
          
