@@ -1,5 +1,13 @@
 
 import React from 'react';
+import rv1 from "../components/images/rv1.jpg";
+import rv2 from "../components/images/rv2.jpg";
+import rv3 from "../components/images/rv3.jpg";
+import rv4 from "../components/images/rv4.jpg";
+import rv5 from "../components/images/rv5.jpg";
+import rv6 from "../components/images/rv6.jpg";
+import rv7 from "../components/images/rv7.jpg";
+import rv8 from "../components/images/rv8.jpg";
 
 const Shop = () =>{
   return (
@@ -22,7 +30,7 @@ const Shop = () =>{
     <div className="product-center container">
       <div className="product">
         <div className="product-header">
-          <img src="./images/pic1.jpg" alt />
+          <img src={rv1} alt />
           <ul className="icons">
             <span><i className="bx bx-heart" /></span>
             <a href="cart.html"> <span><i className="bx bx-shopping-bag" /></span>
@@ -31,9 +39,9 @@ const Shop = () =>{
           </ul>
         </div>
         <div className="product-footer">
-          <a href="product-details.html">
-            <h3>Boy’s T-Shirt</h3>
-          </a>
+          
+            <h3>2021 NEWMAR CANYON STAR 3722</h3>
+          
           <div className="rating">
             <i className="bx bxs-star" />
             <i className="bx bxs-star" />
@@ -41,12 +49,13 @@ const Shop = () =>{
             <i className="bx bxs-star" />
             <i className="bx bx-star" />
           </div>
-          <h4 className="price">$50</h4>
+          <h4 className="price">
+$276,125</h4>
         </div>
       </div>
       <div className="product">
         <div className="product-header">
-          <img src="./images/pic2.jpg" alt />
+          <img src={rv2} alt />
           <ul className="icons">
             <span><i className="bx bx-heart" /></span>
             <span><i className="bx bx-shopping-bag" /></span>
@@ -54,7 +63,7 @@ const Shop = () =>{
           </ul>
         </div>
         <div className="product-footer">
-          <h3>Boy’s T-Shirt</h3>
+          <h3>2018 NEWMAR BAY STAR SPORT 2812</h3>
           <div className="rating">
             <i className="bx bxs-star" />
             <i className="bx bxs-star" />
@@ -62,12 +71,13 @@ const Shop = () =>{
             <i className="bx bxs-star" />
             <i className="bx bx-star" />
           </div>
-          <h4 className="price">$50</h4>
+          <h4 className="price">
+$114,995</h4>
         </div>
       </div>
       <div className="product">
         <div className="product-header">
-          <img src="./images/pic3.jpg" alt />
+          <img src={rv3} alt />
           <ul className="icons">
             <span><i className="bx bx-heart" /></span>
             <span><i className="bx bx-shopping-bag" /></span>
@@ -75,20 +85,21 @@ const Shop = () =>{
           </ul>
         </div>
         <div className="product-footer">
-          <h3>Boy’s T-Shirt</h3>
+          <h3>2017 WINNEBAGO FUSE 23T</h3>
           <div className="rating">
             <i className="bx bxs-star" />
             <i className="bx bxs-star" />
             <i className="bx bxs-star" />
-            <i className="bx bxs-star" />
+            <i className="bx bx-star" />
             <i className="bx bx-star" />
           </div>
-          <h4 className="price">$50</h4>
+          <h4 className="price">
+$88,995</h4>
         </div>
       </div>
       <div className="product">
         <div className="product-header">
-          <img src="./images/pic4.jpg" alt />
+          <img src={rv4} alt />
           <ul className="icons">
             <span><i className="bx bx-heart" /></span>
             <span><i className="bx bx-shopping-bag" /></span>
@@ -96,7 +107,7 @@ const Shop = () =>{
           </ul>
         </div>
         <div className="product-footer">
-          <h3>Boy’s T-Shirt</h3>
+          <h3>2022 NORTHWOOD ARCTIC FOX GRANDE RONDE 27-5L</h3>
           <div className="rating">
             <i className="bx bxs-star" />
             <i className="bx bxs-star" />
@@ -104,12 +115,13 @@ const Shop = () =>{
             <i className="bx bxs-star" />
             <i className="bx bx-star" />
           </div>
-          <h4 className="price">$50</h4>
+          <h4 className="price">
+$79,271</h4>
         </div>
       </div>
       <div className="product">
         <div className="product-header">
-          <img src="./images/pic3.jpg" alt />
+          <img src={rv5} alt />
           <ul className="icons">
             <span><i className="bx bx-heart" /></span>
             <span><i className="bx bx-shopping-bag" /></span>
@@ -117,20 +129,21 @@ const Shop = () =>{
           </ul>
         </div>
         <div className="product-footer">
-          <h3>Boy’s T-Shirt</h3>
+          <h3>2022 COACHMEN CATALINA TRAIL BLAZER 28THS</h3>
           <div className="rating">
             <i className="bx bxs-star" />
             <i className="bx bxs-star" />
-            <i className="bx bxs-star" />
-            <i className="bx bxs-star" />
+            <i className="bx bx-star" />
+            <i className="bx bx-star" />
             <i className="bx bx-star" />
           </div>
-          <h4 className="price">$50</h4>
+          <h4 className="price">
+$56,606</h4>
         </div>
       </div>
       <div className="product">
         <div className="product-header">
-          <img src="./images/pic5.jpg" alt />
+          <img src={rv6} alt />
           <ul className="icons">
             <span><i className="bx bx-heart" /></span>
             <span><i className="bx bx-shopping-bag" /></span>
@@ -138,20 +151,21 @@ const Shop = () =>{
           </ul>
         </div>
         <div className="product-footer">
-          <h3>Boy’s T-Shirt</h3>
+          <h3>2022 KZ CONNECT SE C221FKKSE</h3>
           <div className="rating">
             <i className="bx bxs-star" />
             <i className="bx bxs-star" />
-            <i className="bx bxs-star" />
-            <i className="bx bxs-star" />
+            <i className="bx bx-star" />
+            <i className="bx bx-star" />
             <i className="bx bx-star" />
           </div>
-          <h4 className="price">$50</h4>
+          <h4 className="price">
+$47,791</h4>
         </div>
       </div>
       <div className="product">
         <div className="product-header">
-          <img src="./images/pic2.jpg" alt />
+          <img src={rv7} alt />
           <ul className="icons">
             <span><i className="bx bx-heart" /></span>
             <span><i className="bx bx-shopping-bag" /></span>
@@ -159,20 +173,21 @@ const Shop = () =>{
           </ul>
         </div>
         <div className="product-footer">
-          <h3>Boy’s T-Shirt</h3>
+          <h3>2022 THOR MOTOR COACH PALAZZO 33.5</h3>
           <div className="rating">
             <i className="bx bxs-star" />
             <i className="bx bxs-star" />
             <i className="bx bxs-star" />
             <i className="bx bxs-star" />
-            <i className="bx bx-star" />
+            <i className="bx bxs-star" />
           </div>
-          <h4 className="price">$50</h4>
+          <h4 className="price">
+$281,850</h4>
         </div>
       </div>
       <div className="product">
         <div className="product-header">
-          <img src="./images/pic3.jpg" alt />
+          <img src={rv8} alt />
           <ul className="icons">
             <span><i className="bx bx-heart" /></span>
             <span><i className="bx bx-shopping-bag" /></span>
@@ -180,15 +195,15 @@ const Shop = () =>{
           </ul>
         </div>
         <div className="product-footer">
-          <h3>Boy’s T-Shirt</h3>
+          <h3>2021 COACHMEN SPORTSCOACH SRS 354QS</h3>
           <div className="rating">
             <i className="bx bxs-star" />
             <i className="bx bxs-star" />
             <i className="bx bxs-star" />
             <i className="bx bxs-star" />
-            <i className="bx bx-star" />
+            <i className="bx bxs-star" />
           </div>
-          <h4 className="price">$50</h4>
+          <h4 className="price">$272,063</h4>
         </div>
       </div>
     </div>

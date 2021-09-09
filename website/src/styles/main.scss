@@ -1,9 +1,10 @@
 @use "./utils/navbar";
 @use "./utils/home";
-@use "./utils/login";
 @use "./utils/map";
-@use  "./utils/footer";
+@use "./utils/footer";
 @use "./utils/profile";
-@use "./utils/about";
+@use "./utils/login";
 @use "./utils/contact";
-@use "./utils/shop"
+@use "./utils/shop";
+@use "./utils/about";
+@use "./utils/variables";

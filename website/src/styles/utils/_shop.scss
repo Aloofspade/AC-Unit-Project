@@ -1,11 +1,14 @@
 /* Exclusive Product */
 .product-center {
-	display: grid;
+	
 	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 	gap: 7rem 3rem;
 }
 .product {
 	height: 48rem;
+	width: 800px;
+	margin: auto;
+	padding: auto;
 	background-color: #fff;
 	box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
 	border-radius: 1rem;
@@ -41,6 +44,7 @@
 	z-index: 0;
 	img {
 		height: 100%;
+		width: 100%;
 	}
 	.icons {
 		position: absolute;
@@ -66,7 +70,7 @@
 				margin-bottom: 1rem;
 			}
 			&:hover {
-				background-color: #ff7c9c;
+				background-color: #734002;
 				color: #fff;
 			}
 		}
@@ -82,12 +86,12 @@
 		font-size: 2.2rem;
 	}
 	.price {
-		color: #ff7c9c;
+		color: #734002;
 		font-size: 2rem;
 	}
 }
 .rating {
-	color: #43b3d9;
+	color: #F27405;
 }
 .product-banner {
 	display: grid;
